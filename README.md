@@ -9,14 +9,6 @@ So ist es möglich, den Stern `*` als Platzhalter für mehrere Zeichen oder das 
 
 ## URL Query Parameter
 
-```
-curl -so ps-suche.html https://www.parlamentsspiegel.de/suche
-```
-
-### query
-
-Mit dem Parameter `query` übergibt man den Suchbegriff.
-
 
 ### fqHerk
 
@@ -46,6 +38,23 @@ Mögliche Werte sind:
 
 
 ### fqVSys
+
+#### Beschaffen der Werte
+
+Um alle Werte für den Parameter `fqVSys` zu erhalten, bietet es sich an, die Such-Seite des Parlamentsspiegels zu parsen.
+
+Dazu lädt man sich zunächste die Seite im HTML-Format herunter:
+
+```
+curl -so ps-suche.html https://www.parlamentsspiegel.de/suche
+```
+
+(:warning: Letztes update: 15. 2. 2026)
+
+Anschließend wird die Datei mit dem Skript ... geparst. :rotating_light: TODO: Skript verlinken
+
+
+#### Liste der Werte
 
 Mit dem Parameter `fqVSys` kann man ein Sachgebiet angeben.
 
